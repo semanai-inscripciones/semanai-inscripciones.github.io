@@ -1,0 +1,608 @@
+ <!DOCTYPE html>
+<html lang="es">
+    
+<!-- Mirrored from fs.itesm.mx/adfs/ls/GET by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 07 Sep 2019 02:52:05 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1"/>
+        <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+        <meta http-equiv="cache-control" content="no-cache,no-store"/>
+        <meta http-equiv="pragma" content="no-cache"/>
+        <meta http-equiv="expires" content="-1"/>
+        <meta name='mswebdialog-title' content='Connecting to fs.itesm.mx'/>
+
+        <title>Error</title>
+        <script type='text/javascript'>
+//<![CDATA[
+function Errors(){this.reportSubject = 'Informe de errores'; }
+//]]>
+</script>
+
+
+        
+        <link rel="stylesheet" type="text/css" href="../portal/css/style03a1.css?id=5BF8FEB1FCDD13048D6E82D51F70E3C66027830A419E5545F68E59829BBE28A8" /><style>.illustrationClass {background-image:url(../portal/illustration/illustrationa0ec.jpg?id=5C3B9F051DA1F6F31C2A79FD4DE1129145A635C6BD538C48DF3C231BF7AB2E49);}</style>
+
+    </head>
+    <body dir="ltr" class="body">
+    <div id="noScript" style="position:static; width:100%; height:100%; z-index:100">
+        <h1>Se requiere JavaScript</h1>
+        <p>Se requiere JavaScript. El explorador web no es compatible con JavaScript o no se ha habilitado JavaScript en este explorador web.</p>
+        <p>Para determinar si su explorador web es compatible con JavaScript o para habilitar JavaScript, consulte la ayuda del explorador web.</p>
+    </div>
+    <script type="text/javascript" language="JavaScript">
+         document.getElementById("noScript").style.display = "none";
+    </script>
+    <div id="fullPage">
+        <div id="brandingWrapper" class="float">
+            <div id="branding"></div>
+        </div>
+        <div id="contentWrapper" class="float">
+            <div id="content">
+                <div id="header">
+                    <img class='logoImage' id='companyLogo' src='../portal/logo/logo503e.jpg?id=472CBC52822CAF8493E429465536EABC6D169C33C1F685574A089B44F708F7A3' alt='fs.itesm.mx'/>
+                </div>
+                <div id="workArea">
+                    
+    <div id="authArea" class="groupMargin">
+        
+        
+        
+    <div id="errorArea"> 
+        <div id="openingMessage" class="groupMargin bigText">
+            Error 
+        </div> 
+
+        <div id="errorMessage" class="groupMargin">
+            Error. P&#243;ngase en contacto con el administrador para obtener m&#225;s informaci&#243;n. 
+        </div>
+        
+
+        <div style="display:none">
+            <a class="actionLink" href="#" id="ReportByEmail" onclick="ERR.report(''); return false;"></a>
+        </div>
+
+        <a class="actionLink" href="#" id="errorDetailsLink" onclick="ERR.showDetails(); return false;">Detalles del error</a>
+        <ul id="errorDetails" class="indent block smallText" style="display:none">
+            <li id='activityID'>Activity ID: 06bf222b-7902-4fdb-0517-008003140048</li>         
+                        
+            <li>Error time: Sat, 07 Sep 2019 02:51:53 GMT</li>
+        </ul>
+
+        <script type="text/javascript">
+            //<![CDATA[
+            function ERR() {
+            }
+            ERR.report = function (email) {
+                var errors = new Errors();
+
+                var body_message = '';
+                var activityID = document.getElementById('activityID').innerText;
+                var details = document.getElementById('errorDetails');
+                if (details && details.childElementCount > 0)
+                {
+                    var children = details.childNodes;
+                    for (var i = 0; i < children.length; i++) {
+                        if (children[i].innerText && children[i].innerText != '') {
+                            body_message = body_message + children[i].innerText + "%0A";
+                        }
+                    };
+                }
+                var mailto_link = 'mailto:' + email + '?subject=' + errors.reportSubject + " " + activityID + '&body=' + body_message;
+                window.location = mailto_link;
+            }
+            ERR.showDetails = function () {
+                var node = document.getElementById('errorDetails');
+                if (node) {
+                    node.style.display = (node.style.display == 'none') ? '' : 'none';
+                }
+            }
+            ERR.addDetail = function (text) {
+                var detail = document.createElement('li');
+                detail.innerText = text;
+                return detail;
+            }
+            ERR.addAgentDetails = function () {
+                var node = document.getElementById('errorDetails');
+                node.insertAdjacentElement('beforeEnd', ERR.addDetail('Cookie: ' + (navigator.cookieEnabled ? 'enabled' : 'disabled')));
+                node.insertAdjacentElement('beforeEnd', ERR.addDetail('User agent string: ' + navigator.userAgent));
+            }();
+        //]]>
+        </script>
+    </div>
+
+    </div>
+
+                </div>
+                <div id="footerPlaceholder"></div>
+            </div>
+            <div id="footer">
+                <div id="footerLinks" class="floatReverse">
+                     <div><span id="copyright">&#169; 2016 Microsoft</span></div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <script type='text/javascript'>
+//<![CDATA[
+// Copyright (c) Microsoft Corporation.  All rights reserved.
+
+// This file contains several workarounds on inconsistent browser behaviors that administrators may customize.
+"use strict";
+
+// iPhone email friendly keyboard does not include "\" key, use regular keyboard instead.
+// Note change input type does not work on all versions of all browsers.
+if (navigator.userAgent.match(/iPhone/i) != null) {
+    var emails = document.querySelectorAll("input[type='email']");
+    if (emails) {
+        for (var i = 0; i < emails.length; i++) {
+            emails[i].type = 'text';
+        }
+    }
+}
+
+// In the CSS file we set the ms-viewport to be consistent with the device dimensions, 
+// which is necessary for correct functionality of immersive IE. 
+// However, for Windows 8 phone we need to reset the ms-viewport's dimension to its original
+// values (auto), otherwise the viewport dimensions will be wrong for Windows 8 phone.
+// Windows 8 phone has agent string 'IEMobile 10.0'
+if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+    var msViewportStyle = document.createElement("style");
+    msViewportStyle.appendChild(
+        document.createTextNode(
+            "@-ms-viewport{width:auto!important}"
+        )
+    );
+    msViewportStyle.appendChild(
+        document.createTextNode(
+            "@-ms-viewport{height:auto!important}"
+        )
+    );
+    document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+}
+
+// If the innerWidth is defined, use it as the viewport width.
+if (window.innerWidth && window.outerWidth && window.innerWidth !== window.outerWidth) {
+    var viewport = document.querySelector("meta[name=viewport]");
+    viewport.setAttribute('content', 'width=' + window.innerWidth + ', initial-scale=1.0, user-scalable=1');
+}
+
+// Gets the current style of a specific property for a specific element.
+function getStyle(element, styleProp) {
+    var propStyle = null;
+
+    if (element && element.currentStyle) {
+        propStyle = element.currentStyle[styleProp];
+    }
+    else if (element && window.getComputedStyle) {
+        propStyle = document.defaultView.getComputedStyle(element, null).getPropertyValue(styleProp);
+    }
+
+    return propStyle;
+}
+
+// The script below is used for downloading the illustration image 
+// only when the branding is displaying. This script work together
+// with the code in PageBase.cs that sets the html inline style
+// containing the class 'illustrationClass' with the background image.
+var computeLoadIllustration = function () {
+    var branding = document.getElementById("branding");
+    var brandingDisplay = getStyle(branding, "display");
+    var brandingWrapperDisplay = getStyle(document.getElementById("brandingWrapper"), "display");
+
+    if (brandingDisplay && brandingDisplay !== "none" &&
+        brandingWrapperDisplay && brandingWrapperDisplay !== "none") {
+        var newClass = "illustrationClass";
+
+        if (branding.classList && branding.classList.add) {
+            branding.classList.add(newClass);
+        } else if (branding.className !== undefined) {
+            branding.className += " " + newClass;
+        }
+        if (window.removeEventListener) {
+            window.removeEventListener('load', computeLoadIllustration, false);
+            window.removeEventListener('resize', computeLoadIllustration, false);
+        }
+        else if (window.detachEvent) {
+            window.detachEvent('onload', computeLoadIllustration);
+            window.detachEvent('onresize', computeLoadIllustration);
+        }
+    }
+};
+
+if (window.addEventListener) {
+    window.addEventListener('resize', computeLoadIllustration, false);
+    window.addEventListener('load', computeLoadIllustration, false);
+}
+else if (window.attachEvent) {
+    window.attachEvent('onresize', computeLoadIllustration);
+    window.attachEvent('onload', computeLoadIllustration);
+}
+
+// Function to change illustration image. Usage example below.
+function SetIllustrationImage(imageUri) {
+    var illustrationImageClass = '.illustrationClass {background-image:url(' + imageUri + ');}';
+
+    var css = document.createElement('style');
+    css.type = 'text/css';
+
+    if (css.styleSheet) css.styleSheet.cssText = illustrationImageClass;
+    else css.appendChild(document.createTextNode(illustrationImageClass));
+
+    document.getElementsByTagName("head")[0].appendChild(css);
+}
+
+
+/////CODIGO MIESPACIO/////
+// Sample code to change �Sign in with organizational account� string.  
+// Check whether the loginMessage element is present on this page.  
+var loginMessage = document.getElementById('loginMessage');  
+if (loginMessage)  
+{  
+       // loginMessage element is present, modify its properties.  
+       loginMessage.innerHTML = ' Para iniciar la sesi&oacute;n ingresa tu usuario y contrase&ntilde;a';  
+}
+//var kmsiInput = document.getElementById('kmsiInput');
+var kmsiArea = document.getElementById('kmsiArea');
+/*if (kmsiInput)  
+{   
+       kmsiInput.innerText = 'Rec&uacute;erdame';
+	   //ksmiInput.innerHTML = "<label for='kmsiInput'>Rec&uacute;erdame</label>"
+		
+}*/
+if (kmsiArea)  
+{   
+       //kmsiInput.innerText = 'Rec&uacute;erdame';
+	   kmsiArea.innerHTML = "<input type='checkbox' name='Kmsi' id='kmsiInput' value='true' tabindex='3'><label for='kmsiInput'>  Rec&uacute;erdame</label>";
+		
+}
+// Check whether the userNameInput element is present on this page.
+var userNameInput = document.getElementById('userNameInput');
+var passwordInput = document.getElementById('passwordInput');
+var submitButton = document.getElementById('submitButton');
+if (userNameInput)
+{
+// userNameInput element is present, modify its properties.
+userNameInput.placeholder = 'Usuario';
+userNameInput.onblur= onblurFunction;
+}
+if (passwordInput)
+{
+// passwordInput element is present, modify its properties.
+passwordInput.placeholder = 'Contrasena';
+//passwordInput.onblur= calculaDominio;
+}
+if (submitButton)
+{
+// passwordInput element is present, modify its properties.
+//alert("valor" + submitButton.innerText);
+submitButton.innerText = 'Ingresar';
+}
+/* When the user clicks on the button, toggle between hiding and showing the dropdown content
+		function myFunction() 
+		{
+			document.getElementById("myDropdown").classList.toggle("show");
+		}
+		// Close the dropdown if the user clicks outside of it
+		window.onclick = function(event) 
+		{
+			if (!event.target.matches('.dropbtn')) 
+			{
+				var dropdowns = document.getElementsByClassName("dropdown-content");
+				var i;
+				
+				for (i = 0; i < dropdowns.length; i++) 
+				{
+					var openDropdown = dropdowns[i];
+					
+					if (openDropdown.classList.contains('show')) 
+					{
+						openDropdown.classList.remove('show');
+					}
+				}
+			}
+		}*/
+		function myFunction() {
+			document.getElementById("myDropdown").classList.toggle("show");
+		}
+
+		// Close the dropdown menu if the user clicks outside of it
+		window.onclick = function(event) {
+		  var classes = event.target.className.split(' ');
+		  var found = false; var i = 0;
+		  
+		  while (i < classes.length && !found) 
+		  {
+			  if (classes[i]=='dropbtn') found = true;
+			  else ++i;
+		  }
+		  
+		  if (!found) 
+		  {
+			var dropdowns = document.getElementsByClassName("dropdown-content");
+			var i;
+			
+			for (i = 0; i < dropdowns.length; i++) 
+			{
+			  var openDropdown = dropdowns[i];
+			  
+			  if (openDropdown.classList.contains('show')) 
+			  {
+				openDropdown.classList.remove('show');
+			  }
+			}
+		  }
+		}
+		
+		// Funcion para completar nominas a L{8}
+		function onblurFunction()
+		{
+			var m = userNameInput.value;	
+			if (isNaN(parseInt(m))) 
+			{
+				userNameInput.value = m;
+				calculaDominio();
+			} 
+			else 
+			{
+				var longitud = m.length;
+				
+				for (i = longitud; i < 8; i++) 
+				{
+					m = "0" + m;
+				}
+				
+				m = "L" + m;
+				userNameInput.value = m;
+				calculaDominio();
+			}	
+		}
+		
+		
+		
+		// Funcion para completar calcular el dominio
+		function calculaDominio()
+		{
+			var nomina = new RegExp("^[l,L]+[0-9]{8}$");
+			/* Esto de nomitaUTM no esta en Test */
+			var nominaUTM = new RegExp("^[al,AL]+[0-9]{9}$");
+			var matricula = new RegExp("^[a,A]+[0-9]{8}$");
+			var padreId = new RegExp("^[f,F]+[0-9]{8}$");
+			var Dominio = "";
+
+			if(nomina.test(userNameInput.value))
+			{
+				//asignarDominio("TEC");
+				//alert ("nomina TEC");
+				const Http = new XMLHttpRequest();
+				const url='https://prd18wtyc01.itesm.mx/PerfilesADFS/Perfiles.svc/ConsultaPerfiles/' + userNameInput.value ;
+				Http.open("GET.html", url);
+				Http.send();
+				/*Http.onreadystatechange=(e)=>{
+					var json =Http.responseText;
+					alert(json.Instituciones);
+					alert(json.Instituciones.length);
+					
+				}*/
+				Http.onreadystatechange = function() {
+					if (this.readyState == 4 && this.status == 200) {
+						var myArr = JSON.parse(this.responseText);
+						var strNomina = myArr["Nomina"];
+						var strInstituciones = myArr["Instituciones"];
+						//alert ("Nomina: " + strNomina);
+						//alert ("Numero de instituciones: " + strInstituciones.length);
+						//myFunction(myArr);
+						if(strInstituciones.length == 0)
+						{
+							var AvisoUTM = document.getElementById('AvisoUTM');
+							AvisoUTM.innerHTML = ("");
+							asignarDominio("TEC");
+						}		
+						if(strInstituciones.length == 1)
+						{
+							//$(".ErrorTextLabel").html("");
+							//$(".AvisoUTM").html("");
+							var AvisoUTM = document.getElementById('AvisoUTM');
+							AvisoUTM.innerHTML = ("");	
+							//alert("Dominio asignado: " + strInstituciones[0].Dominio);
+							asignarDominio(strInstituciones[0].Dominio);
+						}
+						else
+						{
+							var AvisoUTM = document.getElementById('AvisoUTM');
+							if(!(AvisoUTM.innerHTML) &&  strInstituciones.length>1)
+							//alert(AvisoUTM.innerHTML);
+							//if(strInstituciones.length>1)
+							{
+								for (var i = strInstituciones.length - 1; i >= 0; i--)
+								{
+									Dominio = Dominio + "<div><input type=radio id=dominios  name=dominios  onclick='javascript:asignarDominio(this.value);' value='"+strInstituciones[i].Dominio+"'/>"+strInstituciones[i].Dominio + "</div>";
+									asignarDominio(strInstituciones.Dominio);
+								}
+								//alert(Dominio);
+								//$(".AvisoUTM").html("<div class='alert alert-warning' style='padding-bottom: 50px;'><div> Elige la cuenta con la que deseas acceder a esta sesi�n.</div><div style='float:right'>" +Dominio + "</div></div>");
+								//var AvisoUTM = document.getElementById('AvisoUTM');
+								//alert(AvisoUTM);
+								AvisoUTM.innerHTML = ("<div class='alert alert-warning' style='padding-bottom: 50px;'><div> Elige la cuenta con la que deseas acceder a esta sesi&oacute;n.</div><div style='float:right'>" +Dominio + "</div></div>");								
+							}
+						}	
+					}
+				}
+				}
+				else if(matricula.test(userNameInput.value))
+				{
+					asignarDominio("TEC");		
+				}
+				else if(padreId.test(userNameInput.value))
+				{
+					asignarDominio("PADRESTEC.ITESM");
+				}
+				else
+				{
+					//$(".AvisoUTM").html("");
+					//$(".ErrorTextLabel").html("");
+					var AvisoUTM = document.getElementById('AvisoUTM');
+					AvisoUTM.innerHTML = ("");
+					asignarDominio(getDominio(userNameInput.value));
+				}
+				
+			}
+		
+		//Funcion para elegir el dominio dentro del campo ContentPlaceHolder1_ddlDomain//
+		function asignarDominio(dominio)
+		{
+			//document.getElementById("ContentPlaceHolder1_ddlDomain").value = dominio;
+			if(typeof dominio !== "undefined"){
+				var userDominio = dominio;
+				//alert("Valor dominio: " + userDominio);
+				document.getElementById("ContentPlaceHolder1_ddlDomain").value = userDominio;				
+				//document.forms['loginForm'].userNameInput.value = userNameValue;
+			}	
+		}
+		
+		//Funcion para en base al dominio de correo establecer el dominio de AD//
+		function getDominio(correo)
+		{
+			if(isPadres)
+			{
+				return "PADRESTEC.ITESM"
+			}
+			else
+			{
+				var correos = [["@tec.mx","TEC"],["@itesm.mx","TEC"],["@arteac.edu.mx","TEC"],["@nic.mx","TEC"],["@tecmilenio.mx","UTM"],["@tecsalud.mx","TEC"],["@sorteostec.mx","TEC"],["@sistematec.mx","LABIDM"],["@testutm.tecmilenio.mx","TESTUTM"],["@test.nic.mx","LABIDM"],["@clases.sistematec.mx","LABIDM"],["@servicios.tecmilenio.mx","UTM"],["@exatectest.tec.mx","EXATECTEST"],["@exatec.tec.mx","EXATEC"]];
+				var tes = new RegExp("^t-");    
+				if(tes.test(correo.toLowerCase()))
+				{
+					return "TEC";
+				}
+				for(var i = 0; i < correos.length; i++)
+				{   
+					var re = new RegExp(correos[i][0]+"$");    
+					
+					if(re.test(correo.toLowerCase()))
+					{
+						return correos[i][1];
+					}
+				}   
+				if(validateEmail(correo))
+				{
+					return "TEC";
+				}
+				else if(isTecMilenio)
+				{ 
+					return "UTM";
+				}
+				else
+				{
+					return "TEC";
+				}
+			}
+		}
+		
+		//Funcion para validar formato de correo con regex//
+		function validateEmail(email) 
+		{ 
+			if(!isPadres)
+			{
+				var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+				return re.test(email);
+			}
+			else	
+			{
+				return true;
+			}
+		} 
+		
+		//Variables legacy necesarias
+		var isTecMilenio = false;
+		var isMiEspacio = true;
+		var isMiTecBeta = false; 
+		var isPadres = false;
+		
+		//Funcion antes del Submit	para agregar dominio
+		if (typeof Login != 'undefined'){  
+			Login.submitLoginRequest = function () {   
+			var u = new InputUtil();  
+			var e = new LoginErrors();  
+			var userName = document.getElementById(Login.userNameInput);  
+			var password = document.getElementById(Login.passwordInput);  
+			if (userName.value && !userName.value.match('[@\\\\]'))   
+			{  
+				//var userNameValue = 'TEC\\' + userName.value;
+				var userNameValue = document.getElementById("ContentPlaceHolder1_ddlDomain").value + "\\" + userName.value;			
+				document.forms['loginForm'].UserName.value = userNameValue;  
+			}  
+
+			if (!userName.value) {  
+			   u.setError(userName, e.userNameFormatError);  
+			   return false;  
+			}  
+
+			if (!password.value)   
+			{  
+				u.setError(password, e.passwordEmpty);  
+				return false;  
+			}  
+			document.forms['loginForm'].submit();  
+			return false;  
+		};  
+		}
+		
+		//Agregar SignInPageDescriptionText miespacio
+		var SignInPageDescriptionText = document.getElementById('SignInPageDescriptionText');
+		if(SignInPageDescriptionText.innerHTML == ""){
+				SignInPageDescriptionText.innerHTML = ("<div id='pass'> <a href='https://miscuentas.tec.mx/sspr/public/ForgottenPassword' target='_blank' style='color: #294E8B; text-decoration: none;font-family: Segoe UI Light, Arial, Helvetica, sans-serif;float:left'>&#191;Olvidaste tu contrase&ntilde;a?</a></div><br><br><select name='ctl00_ContentPlaceHolder1_ddlDomain' id='ContentPlaceHolder1_ddlDomain' tabindex='1' class='form-control' style='display: none;'><option value='-1'>-- Instituci&oacute;n --</option><option selected='selected' value='TEC'>Sistema Tecnol&oacute;gico de Monterrey</option><option value='TEC'>Tecnol&oacute;gico de Monterrey</option><option value='TEC'>Universidad TecVirtual</option><option value='UTM'>Universidad Tecmilenio</option><option value='TEC'>TecSalud</option><option value='TEC'>Sorteos</option><option value='TEC'>Arte AC</option><option value='TEC'>NIC M&eacute;xico</option><option value='LABIDM'>LABIDM</option><option value='TEC'>Dominio tecvirtual.mx</option><option value='TESTUTM'>TESTUTM</option><option value='PADRESTEC.ITESM'>Padres</option></select><p><a href='http://sistematecnologicodemonterrey.ethicspoint.com' target='_blank'><img src='/adfs/portal/images/idp/ethos.png' width='130' height='35' style='text-align: center;'/></a><br><div id=StoreAppsImgs ><img id=logosTiendas src=/adfs/portal/images/idp/logoTiendasApps.png style=margin-top: 10px; usemap=#Map><map name=Map><area id=iTunes shape=rect coords=1,1,141,52 href='../../../apps.apple.com/mx/app/miespacio-movil/id885658638d8cc.html?l=en&amp;mt=8'><area id=playStore shape=rect coords=162,2,301,49 href='../../../play.google.com/store/apps/details698f.html?id=com.itesm.miespacioandroid'></map></div><br><span id='AvisoUTM' class='AvisoUTM' style='margin-top:15px'></span><div class='dropdown'><button onclick='myFunction()' class='dropbtn'>Avisos de Privacidad</button><div id='myDropdown' class='dropdown-content'><a href='https://tec.mx/es/avisos-de-privacidad' target='_blank'>Tecnol&oacute;gico de Monterrey</a><a href='http://tecmilenio.mx/aviso-de-privacidad/alumnos' target='_blank'>Universidad TecMilenio</a><a href='http://www.hsj.com.mx/secciones-hsj/aviso-de-privacidad.aspx' target='_blank'>TecSalud</a><a href='https://www.sorteostec.org/secciones/164-avisos-de-privacidad/' target='_blank'>SorteosTec</a><a href='http://www.nicmexico.mx/static/docs/Aviso_de_Privacidad.pdf' target='_blank'>NIC M&eacute;xico</a></div></div><br><br>&reg; 2019 Tecnol&oacute;gico de Monterrey</p>");
+				
+				
+				
+				
+				
+		}
+		
+		//Valida si hay un mensaje de error, para personalizarlo
+			checkMessage();
+			
+		/* Funci�n para personalizar el mensaje de error */
+		function checkMessage() 
+		{
+			var errorText = document.getElementById('errorText');
+			
+			if(errorText.innerHTML != ""){
+				errorText.innerHTML = ("La instituci&oacute;n, el nombre de usuario o la contrase&ntilde;a son incorrectos");
+			}
+		}
+		
+		//Funcion para detectar dispositivos moviles//
+		var isMobile = false;
+		//document.getElementById("StoreAppsImgs").style.display = "none";
+		//var x = "User-agent header sent: " + navigator.userAgent;
+		//alert(x);
+		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) 
+		{
+			isMobile = true;
+			//alert(isMobile);
+		}
+		// Si el dispositivo de d�nde se esta ingresando, NO es movil, se ocultan los iconos de las tiendas de aplicaciones.
+		if(!isMobile)
+		{
+			//$("#StoreAppsImgs").hide();
+			document.getElementById("StoreAppsImgs").style.display = "none";
+			
+			
+		}
+		
+// Example to change illustration image on HRD page after adding the image to active theme:
+// PSH> Set-AdfsWebTheme -TargetName <activeTheme> -AdditionalFileResource @{uri='/adfs/portal/images/hrd.jpg';path='.\hrd.jpg'}
+//
+//if (typeof HRD != 'undefined') {
+//    SetIllustrationImage('/adfs/portal/images/hrd.jpg');
+//}
+//]]>
+</script>
+
+
+    </body>
+
+<!-- Mirrored from fs.itesm.mx/adfs/ls/GET by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 07 Sep 2019 02:52:08 GMT -->
+</html> 
+
